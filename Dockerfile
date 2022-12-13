@@ -1,7 +1,7 @@
 FROM golang:1.19 AS build
 WORKDIR /go/src/github.com/zricethezav/gitleaks
 COPY . .
-RUN CGO_ENABLED=0 go build -o bin/gitleaks -ldflags
+RUN CGO_ENABLED=0 go build -o bin/gitleaks
 
 FROM alpine:3.16
 RUN adduser -D gitleaks && \
