@@ -7,4 +7,5 @@
 - id: gitleaks-docker
   name: Detect hardcoded secrets
   description: Detect hardcoded secrets using Gitleaks
+  entry: gitleaks
   language: docker
